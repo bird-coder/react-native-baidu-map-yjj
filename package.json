@@ -1,0 +1,54 @@
+
+{
+  "name": "react-native-baidu-map-sdk",
+  "version": "1.0.0",
+  "description": "react-native baidumap sdk",
+  "main": "lib/js/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react-native",
+    "maps",
+    "mapview",
+    "location",
+    "baidumap"
+  ],
+  "author": "bird-coder",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bird-coder/react-native-baidu-map-sdk"
+  },
+  "license": "",
+  "files": [
+    "lib/js",
+    "lib/ios",
+    "lib/android/src",
+    "lib/android/build.gradle"
+  ],
+  "dependencies": {
+    "@types/react": "^16.4.14",
+    "@types/react-native": "^0.56.18",
+    "supercluster": "^3.0.2"
+  },
+  "peerDependencies": {
+    "react-native": ">=0.47"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.2",
+    "babel-preset-react-native": "^4.0.0",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.10.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.7.0",
+    "flow-bin": "^0.69.0",
+    "react": "^16.2.0",
+    "react-native": "^0.52.3",
+    "react-navigation": "1.5.11",
+    "typescript": "^3.0.3"
+  },
+  "presets": [
+    "react-native"
+  ]
+}
