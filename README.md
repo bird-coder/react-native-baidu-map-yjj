@@ -1,4 +1,4 @@
-# react-native-baidu-map-sdk
+# react-native-baidu-map-yjj
 该项目基于[qiuxiang/react-native-baidumap-sdk](https://github.com/qiuxiang/react-native-baidumap-sdk.git)库修改，
 修复了原库由于缺少minSdkVersion和targetSdkVersion导致的编译不通过问题，
 并在原库基础上增加了坐标转化reserve接口的poi信息返回，增加了suggestion搜索建议
@@ -10,17 +10,17 @@
 
 ## 引入项目
 ```
-npm i react-native-baidu-map-sdk
+npm i react-native-baidu-map-yjj
 ```
 ### 或
 ```
-yarn add react-native-baidu-map-sdk
+yarn add react-native-baidu-map-yjj
 ```
 
 ## 配置
 ### Android
 ```
-react-native link react-native-baidu-map-sdk
+react-native link react-native-baidu-map-yjj
 获取 Android 开发密钥， 在 AndroidManifest 中添加：
 <application>
     <meta-data
@@ -56,7 +56,7 @@ target '您的项目名称' do
   pod 'GLog', :podspec => '../node_modules/react-native/third-party-podspecs/GLog.podspec'
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
-  pod 'react-native-baidu-map-sdk', path: '../node_modules/react-native-baidu-map-sdk/ios'
+  pod 'react-native-baidu-map-yjj', path: '../node_modules/react-native-baidu-map-yjj/ios'
 end
 
 post_install do |installer|
@@ -73,7 +73,7 @@ end
 
 ### 基本用法
 ```javascript
-import { MapView } from 'react-native-baidu-map-sdk'
+import { MapView } from 'react-native-baidu-map-yjj'
 
 render() {
   return <MapView center={{ latitude: 39.2, longitude: 112.4 }} />
@@ -87,7 +87,7 @@ render() {
 
 ### 监听地图事件
 ```javascript
-import { MapView } from 'react-native-baidu-map-sdk'
+import { MapView } from 'react-native-baidu-map-yjj'
 
 render() {
   return (
@@ -102,7 +102,7 @@ render() {
 
 ### 定位并关联定位图层
 ```javascript
-import { MapView, Location } from 'react-native-baidu-map-sdk'
+import { MapView, Location } from 'react-native-baidu-map-yjj'
 
 await Location.init()
 Location.addLocationListener(location => this.setState({ location }))
@@ -198,7 +198,7 @@ points = [
 
 ### 地理编码/逆地理编码
 ```javascript
-import { Geocode } from 'react-native-baidu-map-sdk'
+import { Geocode } from 'react-native-baidu-map-yjj'
 
 const searchResult = null
 Geocode.search('海龙大厦').then((res) => {
@@ -212,7 +212,7 @@ Geocode.reverse({ latitude: 39, longitude: 113 }).then((res) => {
 
 ### 搜索建议
 ```javascript
-import { Suggestion } from 'react-native-baidu-map-sdk'
+import { Suggestion } from 'react-native-baidu-map-yjj'
 
 const SuggestionResult = null
 Suggestion.requestSuggestion({ latitude: 39, longitude: 113 }).then((res) => {

@@ -1,5 +1,5 @@
 {
-  "name": "react-native-baidu-map-sdk",
+  "name": "react-native-baidu-map-yjj",
   "version": "1.0.0",
   "description": "基于react-native-baidumap-sdk库修改，增加了搜索建议，逆地理编码reverse的poi信息返回",
   "main": "js/index.js",
