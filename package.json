@@ -19,6 +19,13 @@
     "url": "https://github.com/bird-coder/react-native-baidu-map-sdk"
   },
   "license": "",
+  "files": [
+    "js",
+    "ios",
+    "android/src",
+    "android/libs",
+    "android/build.gradle"
+  ],
   "dependencies": {
     "@types/react": "^16.4.14",
     "@types/react-native": "^0.56.18",
