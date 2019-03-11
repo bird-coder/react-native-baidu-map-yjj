@@ -26,7 +26,6 @@ class BaiduMapLocationModule(context: ReactApplicationContext) : ReactContextBas
         client.locOption = option
         client.registerLocationListener(object : BDAbstractLocationListener() {
             override fun onReceiveLocation(location: BDLocation) {
-                TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
                 val data = Arguments.createMap()
                 data.putInt("timestamp", (dateFormat.parse(location.time).time / 1000).toInt())
                 data.putString("coordinateType", location.coorType)
@@ -43,7 +42,6 @@ class BaiduMapLocationModule(context: ReactApplicationContext) : ReactContextBas
     }
 
     override fun getName(): String {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
         return "BaiduMapLocation"
     }
 

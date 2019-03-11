@@ -16,12 +16,10 @@ import com.facebook.react.uimanager.annotations.ReactProp
 @Suppress("unused")
 class BaiduMapMarkerManager : ViewGroupManager<BaiduMapMarker>() {
     override fun getName(): String {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
         return "BaiduMapMarker"
     }
 
     override fun createViewInstance(context: ThemedReactContext): BaiduMapMarker {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
         return BaiduMapMarker(context)
     }
 

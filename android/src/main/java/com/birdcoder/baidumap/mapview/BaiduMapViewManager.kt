@@ -22,12 +22,10 @@ import com.facebook.react.uimanager.annotations.ReactProp
 @Suppress("unused")
 class BaiduMapViewManager : ViewGroupManager<BaiduMapView>() {
     override fun getName(): String {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
         return "BaiduMapView"
     }
 
     override fun createViewInstance(context: ThemedReactContext): BaiduMapView {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
         return BaiduMapView(context)
     }
 

@@ -14,12 +14,10 @@ import com.facebook.react.uimanager.annotations.ReactProp
 @Suppress("unused")
 class BaiduMapCircleManager : SimpleViewManager<BaiduMapCircle>() {
     override fun getName(): String {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
         return "BaiduMapCircle"
     }
 
     override fun createViewInstance(context: ThemedReactContext): BaiduMapCircle {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
         return BaiduMapCircle(context)
     }
 

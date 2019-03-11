@@ -27,7 +27,6 @@ class BaiduMapHeatMap(context: Context) : ReactViewGroup(context), BaiduMapOverl
     }
 
     override fun addTo(mapView: BaiduMapView) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
         mapView.map.addHeatMap(HeatMap.Builder()
                 .opacity(opacity)
                 .radius(radius)
@@ -36,7 +35,6 @@ class BaiduMapHeatMap(context: Context) : ReactViewGroup(context), BaiduMapOverl
     }
 
     override fun remove() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
         heatMap?.removeHeatMap()
     }
 }

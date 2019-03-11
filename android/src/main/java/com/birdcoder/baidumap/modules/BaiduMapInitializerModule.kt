@@ -22,7 +22,6 @@ class BaiduMapInitializerModule(private val context: ReactApplicationContext) : 
         private var promise: Promise? = promise
 
         override fun onReceive(context: Context, intent: Intent) {
-            TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
             if (intent.action == SDK_BROADTCAST_ACTION_STRING_PERMISSION_CHECK_OK) {
                 promise?.resolve(null)
             } else {
@@ -35,7 +34,6 @@ class BaiduMapInitializerModule(private val context: ReactApplicationContext) : 
     private val emitter by lazy { context.getJSModule(RCTDeviceEventEmitter::class.java) }
 
     override fun getName(): String {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
         return "BaiduMapInitializer"
     }
 

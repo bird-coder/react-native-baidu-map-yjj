@@ -149,14 +149,12 @@ class BaiduMapMarker(context: Context) : ReactViewGroup(context), BaiduMapOverla
     }
 
     override fun addTo(mapView: BaiduMapView) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
         this.mapView = mapView
         marker = mapView.map.addOverlay(options) as Marker
         updateInfoWindow()
     }
 
     override fun remove() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
         active = false
         marker?.remove()
     }

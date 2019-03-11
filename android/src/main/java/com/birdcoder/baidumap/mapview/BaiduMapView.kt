@@ -66,7 +66,6 @@ class BaiduMapView(context: Context) : FrameLayout(context) {
 
         map.setOnMapClickListener(object : BaiduMap.OnMapClickListener {
             override fun onMapPoiClick(poi: MapPoi): Boolean {
-                TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
                 val data = poi.position.toWritableMap()
                 data.putString("name", poi.name)
                 data.putString("uid", poi.uid)
@@ -76,7 +75,6 @@ class BaiduMapView(context: Context) : FrameLayout(context) {
             }
 
             override fun onMapClick(latLng: LatLng) {
-                TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
                 emit(id, "onClick", latLng.toWritableMap())
                 map.hideInfoWindow()
             }
@@ -91,20 +89,13 @@ class BaiduMapView(context: Context) : FrameLayout(context) {
         }
 
         map.setOnMapStatusChangeListener(object : BaiduMap.OnMapStatusChangeListener {
-            override fun onMapStatusChangeStart(status: MapStatus) {
-                TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-            }
+            override fun onMapStatusChangeStart(status: MapStatus) {}
 
-            override fun onMapStatusChangeStart(status: MapStatus, reason: Int) {
-                TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-            }
+            override fun onMapStatusChangeStart(status: MapStatus, reason: Int) {}
 
-            override fun onMapStatusChange(status: MapStatus) {
-                TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-            }
+            override fun onMapStatusChange(status: MapStatus) {}
 
             override fun onMapStatusChangeFinish(status: MapStatus) {
-                TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
                 emitStatusChangeEvent(status)
             }
         })
@@ -118,18 +109,15 @@ class BaiduMapView(context: Context) : FrameLayout(context) {
 
         map.setOnMarkerDragListener(object : BaiduMap.OnMarkerDragListener {
             override fun onMarkerDragEnd(marker: Marker) {
-                TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
                 emitDragEvent(marker, "onDragEnd")
             }
 
             override fun onMarkerDragStart(marker: Marker) {
-                TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
                 map.hideInfoWindow()
                 emitDragEvent(marker, "onDragStart")
             }
 
             override fun onMarkerDrag(marker: Marker) {
-                TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
                 emitDragEvent(marker, "onDrag")
             }
         })

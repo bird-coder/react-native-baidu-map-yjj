@@ -45,12 +45,10 @@ class BaiduMapText(context: Context) : ReactViewGroup(context), BaiduMapOverlay 
     }
 
     override fun addTo(mapView: BaiduMapView) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
         text = mapView.map.addOverlay(options) as Text
     }
 
     override fun remove() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
         text?.remove()
     }
 }

@@ -43,13 +43,11 @@ class BaiduMapCircle(context: Context) : ReactViewGroup(context), BaiduMapOverla
     }
 
     override fun addTo(mapView: BaiduMapView) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
         options.stroke(Stroke(strokeWidth, strokeColor))
         polygon = mapView.map.addOverlay(options) as Circle
     }
 
     override fun remove() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
         polygon?.remove()
     }
 }

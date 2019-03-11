@@ -17,7 +17,6 @@ class BaiduMapGeocodeModule(context: ReactApplicationContext) : ReactContextBase
         val geoCoder = GeoCoder.newInstance()
         geoCoder.setOnGetGeoCodeResultListener(object : OnGetGeoCoderResultListener {
             override fun onGetGeoCodeResult(result: GeoCodeResult?) {
-                TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
                 if (result == null || result.error != SearchResult.ERRORNO.NO_ERROR) {
                     promise?.reject("", "")
                 } else {
@@ -31,7 +30,6 @@ class BaiduMapGeocodeModule(context: ReactApplicationContext) : ReactContextBase
             }
 
             override fun onGetReverseGeoCodeResult(result: ReverseGeoCodeResult?) {
-                TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
                 if (result == null || result.error != SearchResult.ERRORNO.NO_ERROR) {
                     promise?.reject("", "")
                 } else {
@@ -73,7 +71,6 @@ class BaiduMapGeocodeModule(context: ReactApplicationContext) : ReactContextBase
     }
 
     override fun getName(): String {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
         return "BaiduMapGeocode"
     }
 

@@ -14,12 +14,10 @@ import com.facebook.react.uimanager.annotations.ReactProp
 @Suppress("unused")
 class BaiduMapPolygonManager : SimpleViewManager<BaiduMapPolygon>() {
     override fun getName(): String {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
         return "BaiduMapPolygon"
     }
 
     override fun createViewInstance(context: ThemedReactContext): BaiduMapPolygon {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
         return BaiduMapPolygon(context)
     }
 

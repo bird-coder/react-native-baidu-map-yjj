@@ -19,7 +19,6 @@ import com.facebook.react.uimanager.ViewManager
 
 class BaiduMapPackage : ReactPackage {
     override fun createNativeModules(context: ReactApplicationContext): List<NativeModule> {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
         return listOf(
                 BaiduMapLocationModule(context),
                 BaiduMapGeocodeModule(context),
@@ -29,7 +28,6 @@ class BaiduMapPackage : ReactPackage {
     }
 
     override fun createViewManagers(context: ReactApplicationContext): List<ViewManager<*, *>> {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
         return listOf(
                 BaiduMapViewManager(),
                 BaiduMapMarkerManager(),

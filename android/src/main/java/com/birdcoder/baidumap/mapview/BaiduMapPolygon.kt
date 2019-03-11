@@ -40,13 +40,11 @@ class BaiduMapPolygon(context: Context) : ReactViewGroup(context), BaiduMapOverl
     }
 
     override fun addTo(mapView: BaiduMapView) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
         options.stroke(Stroke(strokeWidth, strokeColor))
         polygon = mapView.map.addOverlay(options) as Polygon
     }
 
     override fun remove() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
         polygon?.remove()
     }
 }

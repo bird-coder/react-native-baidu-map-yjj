@@ -14,12 +14,10 @@ import com.facebook.react.uimanager.annotations.ReactProp
 @Suppress("unused")
 class BaiduMapTextManager : SimpleViewManager<BaiduMapText>() {
     override fun getName(): String {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
         return "BaiduMapText"
     }
 
     override fun createViewInstance(context: ThemedReactContext): BaiduMapText {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
         return BaiduMapText(context)
     }
 

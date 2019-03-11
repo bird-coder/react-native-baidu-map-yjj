@@ -10,12 +10,10 @@ import com.facebook.react.uimanager.ViewGroupManager
 
 class BaiduMapCalloutManager : ViewGroupManager<BaiduMapCallout>() {
     override fun getName(): String {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
         return "BaiduMapCallout"
     }
 
     override fun createViewInstance(context: ThemedReactContext): BaiduMapCallout {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
         return BaiduMapCallout(context)
     }
 

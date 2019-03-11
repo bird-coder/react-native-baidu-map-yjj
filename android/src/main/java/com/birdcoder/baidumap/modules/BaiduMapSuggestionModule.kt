@@ -19,7 +19,6 @@ class BaiduMapSuggestionModule(context: ReactApplicationContext) : ReactContextB
         val mSuggestionSearch = SuggestionSearch.newInstance()
         mSuggestionSearch.setOnGetSuggestionResultListener(object : OnGetSuggestionResultListener {
             override fun onGetSuggestionResult(result: SuggestionResult?) {
-                TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
                 if (result == null || result.error != SearchResult.ERRORNO.NO_ERROR) {
                     promise?.reject("", "")
                 } else {
@@ -43,7 +42,6 @@ class BaiduMapSuggestionModule(context: ReactApplicationContext) : ReactContextB
     }
 
     override fun getName(): String {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
         return "BaiduMapSuggestion"
     }
 

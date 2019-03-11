@@ -14,12 +14,10 @@ import com.facebook.react.uimanager.annotations.ReactProp
 @Suppress("unused")
 class BaiduMapPolylineManager : SimpleViewManager<BaiduMapPolyline>() {
     override fun getName(): String {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
         return "BaiduMapPolyline"
     }
 
     override fun createViewInstance(context: ThemedReactContext): BaiduMapPolyline {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
         return BaiduMapPolyline(context)
     }
 

@@ -1,9 +1,8 @@
-
 {
   "name": "react-native-baidu-map-sdk",
   "version": "1.0.0",
   "description": "react-native baidumap sdk",
-  "main": "lib/js/index.js",
+  "main": "js/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -20,12 +19,6 @@
     "url": "https://github.com/bird-coder/react-native-baidu-map-sdk"
   },
   "license": "",
-  "files": [
-    "lib/js",
-    "lib/ios",
-    "lib/android/src",
-    "lib/android/build.gradle"
-  ],
   "dependencies": {
     "@types/react": "^16.4.14",
     "@types/react-native": "^0.56.18",

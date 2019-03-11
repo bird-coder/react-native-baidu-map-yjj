@@ -12,12 +12,10 @@ import com.facebook.react.uimanager.annotations.ReactProp
 @Suppress("unused")
 class BaiduMapHeatMapManager : SimpleViewManager<BaiduMapHeatMap>() {
     override fun getName(): String {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
         return "BaiduMapHeatMap"
     }
 
     override fun createViewInstance(context: ThemedReactContext): BaiduMapHeatMap {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
         return BaiduMapHeatMap(context)
     }
 

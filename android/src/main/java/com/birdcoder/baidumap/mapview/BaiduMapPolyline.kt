@@ -30,12 +30,10 @@ class BaiduMapPolyline(context: Context) : ReactViewGroup(context), BaiduMapOver
     }
 
     override fun addTo(mapView: BaiduMapView) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
         polyline = mapView.map.addOverlay(options) as Polyline
     }
 
     override fun remove() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
         polyline?.remove()
     }
 }
