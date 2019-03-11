@@ -40,7 +40,4 @@ class BaiduMapPackage : ReactPackage {
         )
     }
 
-    override fun createJSModules(): List<Class<out JavaScriptModule>> {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-    }
 }
