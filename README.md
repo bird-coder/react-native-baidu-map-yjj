@@ -6,18 +6,67 @@
 *注意：本项目环境为AndroidStudio-3.3.2，RN-5.8+，如编译遇到问题，请更新至最新版本
 
 ## 安装
-
 安装方法可参考[qiuxiang/react-native-baidumap-sdk](https://github.com/qiuxiang/react-native-baidumap-sdk.git)库
 
-### 特别注意
-
-### Ios
-
+## 引入项目
 ```
-platform :ios, '8.0'
-此处改为9.0版本
-target 'RNBaiduMap' do
-此处填写您的项目名称
+npm i react-native-baidu-map-sdk
+```
+### 或
+```
+yarn add react-native-baidu-map-sdk
+```
+
+## 配置
+### Android
+```
+react-native link react-native-baidu-map-sdk
+获取 Android 开发密钥， 在 AndroidManifest 中添加：
+<application>
+    <meta-data
+      android:name="com.baidu.lbsapi.API_KEY"
+      android:value="开发密钥" />
+</application>
+```
+
+### IOS
+```
+使用 cocoapods 配置
+在 ios 目录下新建文件 Podfile：
+platform :ios, '9.0'
+
+# The target name is most likely the name of your project.
+target '您的项目名称' do
+  # Your 'node_modules' directory is probably in the root of your project,
+  # but if not, adjust the `:path` accordingly
+  pod 'React', :path => '../node_modules/react-native', :subspecs => [
+    'Core',
+    'CxxBridge', # Include this for RN >= 0.47
+    'DevSupport', # Include this to enable In-App Devmenu if RN >= 0.43
+    'RCTText',
+    'RCTNetwork',
+    'RCTWebSocket', # needed for debugging
+    # Add any other subspecs you want to use in your project
+  ]
+  # Explicitly include Yoga if you are using RN >= 0.42.0
+  pod 'yoga', :path => '../node_modules/react-native/ReactCommon/yoga'
+
+  # Third party deps podspec link
+  pod 'DoubleConversion', :podspec => '../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec'
+  pod 'GLog', :podspec => '../node_modules/react-native/third-party-podspecs/GLog.podspec'
+  pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
+
+  pod 'react-native-baidu-map-sdk', path: '../node_modules/react-native-baidu-map-sdk/ios'
+end
+
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    if target.name == "React"
+      target.remove_from_project
+    end
+  end
+end
+然后运行 pod install
 ```
 
 ## 用法
