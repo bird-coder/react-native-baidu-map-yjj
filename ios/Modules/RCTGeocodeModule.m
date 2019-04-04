@@ -85,6 +85,7 @@ RCT_EXPORT_METHOD(reverse:(CLLocationCoordinate2D)coordinate
             @"province": result.addressDetail.province,
             @"city": result.addressDetail.city,
             @"cityCode": result.cityCode,
+            @"district": result.addressDetail.district,
             @"street": result.addressDetail.streetName,
             @"streetNumber": result.addressDetail.streetNumber,
             @"adCode": result.addressDetail.adCode,
