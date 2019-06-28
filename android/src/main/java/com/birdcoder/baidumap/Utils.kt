@@ -53,7 +53,7 @@ fun ReadableMap.toLocationData(): MyLocationData {
 }
 
 fun ReadableArray.toLatLngList(): List<LatLng> {
-    return (0..(this.size() - 1)).map { this.getMap(it).toLatLng() }
+    return (0..(this.size() - 1)).map { this.getMap(it)!!.toLatLng() }
 }
 
 fun LatLng.toWritableMap(): WritableMap {

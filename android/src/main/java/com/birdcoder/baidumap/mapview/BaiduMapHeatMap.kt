@@ -21,7 +21,7 @@ class BaiduMapHeatMap(context: Context) : ReactViewGroup(context), BaiduMapOverl
         this.points = (0..(points.size() - 1))
                 .map { points.getMap(it) }
                 .map {
-                    val intensity = if (it.hasKey("intensity")) it.getDouble("intensity") else 0.0
+                    val intensity = if (it!!.hasKey("intensity")) it.getDouble("intensity") else 0.0
                     WeightedLatLng(it.toLatLng(), intensity)
                 }
     }
